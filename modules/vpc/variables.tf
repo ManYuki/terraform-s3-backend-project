@@ -19,7 +19,7 @@ variable "private_subnet_cidrs" {
 variable "availability_zones" {
   description = "List of Availability Zones to deploy subnets across"
   type        = list(string)
-  default     = ["us-east-1a", "us-east-1b"]
+  default     = ["eu-west-2a", "eu-west-2b"]
 }
 
 variable "environment" {

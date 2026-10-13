@@ -1,7 +1,7 @@
 variable "aws_region" {
   description = "AWS region for provisioning resources"
   type        = string
-  default     = "us-east-1"
+  default     = "eu-west-2"
 }
 
 variable "environment" {
@@ -31,7 +31,7 @@ variable "private_subnet_cidrs" {
 variable "availability_zones" {
   description = "Availability zones for subnet allocation"
   type        = list(string)
-  default     = ["us-east-1a", "us-east-1b"]
+  default     = ["eu-west-2a", "eu-west-2b"]
 }
 
 variable "state_bucket_name" {
