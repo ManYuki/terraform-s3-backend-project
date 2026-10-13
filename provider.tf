@@ -8,8 +8,12 @@ terraform {
     }
   }
 
-  # NOTE: The backend "s3" block will be added here in Step 5
-  # after the S3 bucket is provisioned.
+backend "s3" {
+    bucket  = "yuki-tf-state-dev-2026"
+    key     = "dev/terraform.tfstate"
+    region  = "eu-west-2"
+    encrypt = true
+  }
 }
 
 provider "aws" {
