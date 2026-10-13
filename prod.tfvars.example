@@ -1,0 +1,8 @@
+aws_region           = "eu-west-2"
+environment          = "prod"
+vpc_cidr             = "10.50.0.0/16"
+public_subnet_cidrs  = ["10.50.1.0/24", "10.50.2.0/24"]
+private_subnet_cidrs = ["10.50.10.0/24", "10.50.20.0/24"]
+availability_zones   = ["eu-west-2a", "eu-west-2b"]
+
+state_bucket_name    = "yuki-tf-state-prod-unique"
