@@ -12,3 +12,8 @@ output "bucket_domain_name" {
   description = "The domain name of the bucket"
   value       = aws_s3_bucket.this.bucket_domain_name
 }
+
+output "iam_policy_arn" {
+  description = "The ARN of the IAM policy granting state management access"
+  value       = aws_iam_policy.terraform_state_access.arn
+}
